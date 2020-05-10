@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1082
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTable_DB_Source", "TimeTable_DB_Source\TimeTable_DB_Source.csproj", "{0446404C-A9B3-4663-A5DC-815B699AB8E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0446404C-A9B3-4663-A5DC-815B699AB8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0446404C-A9B3-4663-A5DC-815B699AB8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0446404C-A9B3-4663-A5DC-815B699AB8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0446404C-A9B3-4663-A5DC-815B699AB8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56E0AC5F-AF08-4D23-98EC-DA2C51424B0F}
+	EndGlobalSection
+EndGlobal
