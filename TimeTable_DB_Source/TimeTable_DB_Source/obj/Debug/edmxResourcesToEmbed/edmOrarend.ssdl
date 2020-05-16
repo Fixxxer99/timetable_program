@@ -1,4 +1,109 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Namespace="edmOrarend.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
-  <EntityContainer Name="edmOrarendTargetContainer" />
+<Schema Namespace="edmOrarend.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="edmOrarendStoreContainer">
+    <EntitySet Name="Tantargyak" EntityType="edmOrarend.Store.Tantargyak" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tantermek" EntityType="edmOrarend.Store.Tantermek" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HaziFeladatok" EntityType="edmOrarend.Store.HaziFeladatok" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tanorak" EntityType="edmOrarend.Store.Tanorak" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="TanteremOrarend" Association="edmOrarend.Store.TanteremOrarend">
+      <End Role="Tanterem" EntitySet="Tantermek" />
+      <End Role="Orarend" EntitySet="Tantargyak" />
+    </AssociationSet>
+    <AssociationSet Name="TantargyHaziFeladat" Association="edmOrarend.Store.TantargyHaziFeladat">
+      <End Role="Tantargy" EntitySet="Tantargyak" />
+      <End Role="HaziFeladat" EntitySet="HaziFeladatok" />
+    </AssociationSet>
+    <AssociationSet Name="TanteremTanora" Association="edmOrarend.Store.TanteremTanora">
+      <End Role="Tanterem" EntitySet="Tantermek" />
+      <End Role="Tanora" EntitySet="Tanorak" />
+    </AssociationSet>
+    <AssociationSet Name="TanoraTantargy" Association="edmOrarend.Store.TanoraTantargy">
+      <End Role="Tanora" EntitySet="Tanorak" />
+      <End Role="Tantargy" EntitySet="Tantargyak" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Tantargyak">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nev" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Oktato" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Tanterem_Id" Type="int" Nullable="false" />
+    <Property Name="Tanora_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tantermek">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nev" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HaziFeladatok">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HataridoNap" Type="datetime" Nullable="false" />
+    <Property Name="Tipusa" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Leirasa" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Tantargyak_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tanorak">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Kezdete" Type="datetime" Nullable="false" />
+    <Property Name="Hossza" Type="int" Nullable="false" />
+    <Property Name="Tanterem_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="TanteremOrarend">
+    <End Role="Tanterem" Type="edmOrarend.Store.Tantermek" Multiplicity="1" />
+    <End Role="Orarend" Type="edmOrarend.Store.Tantargyak" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tanterem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orarend">
+        <PropertyRef Name="Tanterem_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TantargyHaziFeladat">
+    <End Role="Tantargy" Type="edmOrarend.Store.Tantargyak" Multiplicity="1" />
+    <End Role="HaziFeladat" Type="edmOrarend.Store.HaziFeladatok" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tantargy">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HaziFeladat">
+        <PropertyRef Name="Tantargyak_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TanteremTanora">
+    <End Role="Tanterem" Type="edmOrarend.Store.Tantermek" Multiplicity="1" />
+    <End Role="Tanora" Type="edmOrarend.Store.Tanorak" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tanterem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tanora">
+        <PropertyRef Name="Tanterem_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TanoraTantargy">
+    <End Role="Tanora" Type="edmOrarend.Store.Tanorak" Multiplicity="1" />
+    <End Role="Tantargy" Type="edmOrarend.Store.Tantargyak" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tanora">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tantargy">
+        <PropertyRef Name="Tanora_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

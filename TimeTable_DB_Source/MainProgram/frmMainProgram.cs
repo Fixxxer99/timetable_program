@@ -13,6 +13,9 @@ namespace MainProgram
     public partial class frmMainProgram : Form
     {
         frmNevjegy nevjegy = new frmNevjegy();
+        frmFelvitel felvitel = new frmFelvitel();
+        frmLekerdez lekerdez = new frmLekerdez();
+
         public frmMainProgram()
         {
             InitializeComponent();
@@ -33,6 +36,17 @@ namespace MainProgram
         private void kilépésToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void adatokFelviteleMódosításaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            felvitel.ShowDialog();
+        }
+
+        private void TsmMenuLekerdez_Click(object sender, EventArgs e)
+        {
+            lekerdez.ShowDialog();
         }
     }
 }
