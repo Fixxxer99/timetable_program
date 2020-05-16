@@ -33,9 +33,10 @@
             this.lbLogin = new System.Windows.Forms.Label();
             this.lbuserName = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbUserName = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
             this.btnEntrance = new System.Windows.Forms.Button();
+            this.btnExitLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,31 +80,45 @@
             this.lbPassword.TabIndex = 3;
             this.lbPassword.Text = "Jelszó :";
             // 
-            // textBox1
+            // tbUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(368, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 20);
-            this.textBox1.TabIndex = 4;
+            this.tbUserName.Location = new System.Drawing.Point(368, 77);
+            this.tbUserName.Name = "tbUserName";
+            this.tbUserName.Size = new System.Drawing.Size(147, 20);
+            this.tbUserName.TabIndex = 4;
             // 
-            // textBox2
+            // tbPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(368, 133);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(147, 20);
-            this.textBox2.TabIndex = 5;
+            this.tbPassword.Location = new System.Drawing.Point(368, 133);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(147, 20);
+            this.tbPassword.TabIndex = 5;
             // 
             // btnEntrance
             // 
             this.btnEntrance.BackColor = System.Drawing.Color.ForestGreen;
             this.btnEntrance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnEntrance.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnEntrance.Location = new System.Drawing.Point(391, 177);
+            this.btnEntrance.Location = new System.Drawing.Point(395, 176);
             this.btnEntrance.Name = "btnEntrance";
             this.btnEntrance.Size = new System.Drawing.Size(92, 41);
             this.btnEntrance.TabIndex = 6;
             this.btnEntrance.Text = "Belépés";
             this.btnEntrance.UseVisualStyleBackColor = false;
+            this.btnEntrance.Click += new System.EventHandler(this.btnEntrance_Click);
+            // 
+            // btnExitLogin
+            // 
+            this.btnExitLogin.BackColor = System.Drawing.Color.Firebrick;
+            this.btnExitLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExitLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnExitLogin.Location = new System.Drawing.Point(0, 239);
+            this.btnExitLogin.Name = "btnExitLogin";
+            this.btnExitLogin.Size = new System.Drawing.Size(103, 48);
+            this.btnExitLogin.TabIndex = 7;
+            this.btnExitLogin.Text = "Kilépés";
+            this.btnExitLogin.UseVisualStyleBackColor = false;
+            this.btnExitLogin.Click += new System.EventHandler(this.btnExitLogin_Click);
             // 
             // frmLogin
             // 
@@ -111,9 +126,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(560, 289);
+            this.Controls.Add(this.btnExitLogin);
             this.Controls.Add(this.btnEntrance);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.tbUserName);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbuserName);
             this.Controls.Add(this.lbLogin);
@@ -135,9 +151,10 @@
         private System.Windows.Forms.Label lbLogin;
         private System.Windows.Forms.Label lbuserName;
         private System.Windows.Forms.Label lbPassword;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbUserName;
+        private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Button btnEntrance;
+        private System.Windows.Forms.Button btnExitLogin;
     }
 }
 

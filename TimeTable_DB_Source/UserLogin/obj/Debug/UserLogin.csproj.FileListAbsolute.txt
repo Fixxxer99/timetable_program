@@ -1,0 +1,16 @@
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\UserLogin.exe.config
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\UserLogin.exe
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\UserLogin.pdb
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\TimeTable_DB_Source.dll
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\EntityFramework.dll
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\TimeTable_DB_Source.pdb
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\TimeTable_DB_Source.dll.config
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\EntityFramework.xml
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.csprojAssemblyReference.cache
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.frmLogin.resources
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.Properties.Resources.resources
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.csproj.GenerateResource.cache
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.csproj.CoreCompileInputs.cache
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.csproj.CopyComplete
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.exe
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.pdb

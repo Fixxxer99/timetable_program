@@ -1,0 +1,12 @@
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\bin\Debug\TimeTable_DB_Source.dll.config
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\bin\Debug\TimeTable_DB_Source.dll
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\bin\Debug\TimeTable_DB_Source.pdb
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\bin\Debug\EntityFramework.dll
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\bin\Debug\EntityFramework.SqlServer.dll
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\bin\Debug\EntityFramework.xml
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\bin\Debug\EntityFramework.SqlServer.xml
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\obj\Debug\TimeTable_DB_Source.csprojAssemblyReference.cache
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\obj\Debug\TimeTable_DB_Source.csproj.CoreCompileInputs.cache
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\obj\Debug\TimeTable_DB_Source.csproj.CopyComplete
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\obj\Debug\TimeTable_DB_Source.dll
+D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\obj\Debug\TimeTable_DB_Source.pdb
