@@ -29,5 +29,10 @@ namespace MainProgram
         {
             Application.Exit();
         }
+
+        private void kilépésToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainProgram));
             this.TssmFajl = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmMenuKIlep = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmMenuAdatfelvitel = new System.Windows.Forms.ToolStripMenuItem();
             this.adatokFelviteleMódosításaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmLekerdezes = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,23 +37,21 @@
             this.TsmKapcsolat = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmMenuNevjegy = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenuFomenu = new System.Windows.Forms.MenuStrip();
+            this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importálásXmplToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenuFomenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // TssmFajl
             // 
             this.TssmFajl.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmMenuKIlep});
+            this.exportToolStripMenuItem,
+            this.importálásXmplToolStripMenuItem,
+            this.kilépésToolStripMenuItem});
             this.TssmFajl.Name = "TssmFajl";
             this.TssmFajl.Size = new System.Drawing.Size(37, 20);
             this.TssmFajl.Text = "Fájl";
-            // 
-            // TsmMenuKIlep
-            // 
-            this.TsmMenuKIlep.Name = "TsmMenuKIlep";
-            this.TsmMenuKIlep.Size = new System.Drawing.Size(180, 22);
-            this.TsmMenuKIlep.Text = "Kilépés";
-            this.TsmMenuKIlep.Click += new System.EventHandler(this.TsmMenuKIlep_Click);
             // 
             // TsmMenuAdatfelvitel
             // 
@@ -96,6 +93,7 @@
             // 
             // TsmMenuNevjegy
             // 
+            this.TsmMenuNevjegy.Image = ((System.Drawing.Image)(resources.GetObject("TsmMenuNevjegy.Image")));
             this.TsmMenuNevjegy.Name = "TsmMenuNevjegy";
             this.TsmMenuNevjegy.Size = new System.Drawing.Size(180, 22);
             this.TsmMenuNevjegy.Text = "Névjegy";
@@ -112,6 +110,25 @@
             this.StripMenuFomenu.Name = "StripMenuFomenu";
             this.StripMenuFomenu.Size = new System.Drawing.Size(564, 24);
             this.StripMenuFomenu.TabIndex = 0;
+            // 
+            // exportToolStripMenuItem
+            // 
+            this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportToolStripMenuItem.Text = "Exportálás (Xml)";
+            // 
+            // importálásXmplToolStripMenuItem
+            // 
+            this.importálásXmplToolStripMenuItem.Name = "importálásXmplToolStripMenuItem";
+            this.importálásXmplToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.importálásXmplToolStripMenuItem.Text = "Importálás (Xml)";
+            // 
+            // kilépésToolStripMenuItem
+            // 
+            this.kilépésToolStripMenuItem.Name = "kilépésToolStripMenuItem";
+            this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kilépésToolStripMenuItem.Text = "Kilépés";
+            this.kilépésToolStripMenuItem.Click += new System.EventHandler(this.kilépésToolStripMenuItem_Click);
             // 
             // frmMainProgram
             // 
@@ -135,7 +152,6 @@
         #endregion
 
         private System.Windows.Forms.ToolStripMenuItem TssmFajl;
-        private System.Windows.Forms.ToolStripMenuItem TsmMenuKIlep;
         private System.Windows.Forms.ToolStripMenuItem TsmMenuAdatfelvitel;
         private System.Windows.Forms.ToolStripMenuItem adatokFelviteleMódosításaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem TsmLekerdezes;
@@ -143,6 +159,9 @@
         private System.Windows.Forms.ToolStripMenuItem TsmKapcsolat;
         private System.Windows.Forms.ToolStripMenuItem TsmMenuNevjegy;
         private System.Windows.Forms.MenuStrip StripMenuFomenu;
+        private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importálásXmplToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kilépésToolStripMenuItem;
     }
 }
 

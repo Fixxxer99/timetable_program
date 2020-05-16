@@ -65,10 +65,37 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>edmLogin.edmx</DependentUpon>
     </Compile>
+    <Compile Include="edmOrarend.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmOrarend.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmOrarend.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmOrarend.tt</DependentUpon>
+    </Compile>
+    <Compile Include="edmOrarend.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>edmOrarend.edmx</DependentUpon>
+    </Compile>
     <Compile Include="enSzemely.cs">
       <DependentUpon>edmLogin.tt</DependentUpon>
     </Compile>
+    <Compile Include="HaziFeladat.cs">
+      <DependentUpon>edmOrarend.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tanora.cs">
+      <DependentUpon>edmOrarend.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tantargy.cs">
+      <DependentUpon>edmOrarend.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tanterem.cs">
+      <DependentUpon>edmOrarend.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="edmLogin.edmx">
@@ -80,6 +107,13 @@
     <None Include="App.Config" />
     <None Include="edmLogin.edmx.diagram">
       <DependentUpon>edmLogin.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="edmOrarend.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>edmOrarend.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="edmOrarend.edmx.diagram">
+      <DependentUpon>edmOrarend.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -94,6 +128,17 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>edmLogin.cs</LastGenOutput>
       <DependentUpon>edmLogin.edmx</DependentUpon>
+    </Content>
+    <Content Include="edmOrarend.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>edmOrarend.Context.cs</LastGenOutput>
+      <DependentUpon>edmOrarend.edmx</DependentUpon>
+    </Content>
+    <Content Include="edmOrarend.edmx.sql" />
+    <Content Include="edmOrarend.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>edmOrarend.cs</LastGenOutput>
+      <DependentUpon>edmOrarend.edmx</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

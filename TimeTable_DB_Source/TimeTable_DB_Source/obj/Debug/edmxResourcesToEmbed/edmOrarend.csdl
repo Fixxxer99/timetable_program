@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="edmOrarend" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="cnOrarend" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tantargyak" EntityType="edmOrarend.Tantargy" />
+    <EntitySet Name="Tantermek" EntityType="edmOrarend.Tanterem" />
+    <AssociationSet Name="TanteremOrarend" Association="edmOrarend.TanteremOrarend">
+      <End Role="Tanterem" EntitySet="Tantermek" />
+      <End Role="Orarend" EntitySet="Tantargyak" />
+    </AssociationSet>
+    <EntitySet Name="HaziFeladatok" EntityType="edmOrarend.HaziFeladat" />
+    <AssociationSet Name="TantargyHaziFeladat" Association="edmOrarend.TantargyHaziFeladat">
+      <End Role="Tantargy" EntitySet="Tantargyak" />
+      <End Role="HaziFeladat" EntitySet="HaziFeladatok" />
+    </AssociationSet>
+    <EntitySet Name="Tanorak" EntityType="edmOrarend.Tanora" />
+    <AssociationSet Name="TanteremTanora" Association="edmOrarend.TanteremTanora">
+      <End Role="Tanterem" EntitySet="Tantermek" />
+      <End Role="Tanora" EntitySet="Tanorak" />
+    </AssociationSet>
+    <AssociationSet Name="TanoraTantargy" Association="edmOrarend.TanoraTantargy">
+      <End Role="Tanora" EntitySet="Tanorak" />
+      <End Role="Tantargy" EntitySet="Tantargyak" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Tantargy">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nev" Type="String" Nullable="false" />
+    <Property Name="Oktato" Type="String" Nullable="false" />
+    <NavigationProperty Name="Tanterem" Relationship="edmOrarend.TanteremOrarend" FromRole="Orarend" ToRole="Tanterem" />
+    <NavigationProperty Name="HaziFeladatok" Relationship="edmOrarend.TantargyHaziFeladat" FromRole="Tantargy" ToRole="HaziFeladat" />
+    <NavigationProperty Name="Tanora" Relationship="edmOrarend.TanoraTantargy" FromRole="Tantargy" ToRole="Tanora" />
+  </EntityType>
+  <EntityType Name="Tanterem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nev" Type="String" Nullable="false" />
+    <NavigationProperty Name="Tantargyak" Relationship="edmOrarend.TanteremOrarend" FromRole="Tanterem" ToRole="Orarend" />
+    <NavigationProperty Name="Tanorak" Relationship="edmOrarend.TanteremTanora" FromRole="Tanterem" ToRole="Tanora" />
+  </EntityType>
+  <Association Name="TanteremOrarend">
+    <End Type="edmOrarend.Tanterem" Role="Tanterem" Multiplicity="1" />
+    <End Type="edmOrarend.Tantargy" Role="Orarend" Multiplicity="*" />
+  </Association>
+  <EntityType Name="HaziFeladat">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Tantargyak" Relationship="edmOrarend.TantargyHaziFeladat" FromRole="HaziFeladat" ToRole="Tantargy" />
+    <Property Name="HataridoNap" Type="DateTime" Nullable="false" />
+    <Property Name="Tipusa" Type="String" Nullable="false" />
+    <Property Name="Leirasa" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="TantargyHaziFeladat">
+    <End Type="edmOrarend.Tantargy" Role="Tantargy" Multiplicity="1" />
+    <End Type="edmOrarend.HaziFeladat" Role="HaziFeladat" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Tanora">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Kezdete" Type="DateTime" Nullable="false" />
+    <Property Name="Hossza" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Tanterem" Relationship="edmOrarend.TanteremTanora" FromRole="Tanora" ToRole="Tanterem" />
+    <NavigationProperty Name="Tantargyak" Relationship="edmOrarend.TanoraTantargy" FromRole="Tanora" ToRole="Tantargy" />
+  </EntityType>
+  <Association Name="TanteremTanora">
+    <End Type="edmOrarend.Tanterem" Role="Tanterem" Multiplicity="1" />
+    <End Type="edmOrarend.Tanora" Role="Tanora" Multiplicity="*" />
+  </Association>
+  <Association Name="TanoraTantargy">
+    <End Type="edmOrarend.Tanora" Role="Tanora" Multiplicity="1" />
+    <End Type="edmOrarend.Tantargy" Role="Tantargy" Multiplicity="*" />
+  </Association>
+</Schema>
