@@ -12,9 +12,22 @@ namespace MainProgram
 {
     public partial class frmMainProgram : Form
     {
+        frmNevjegy nevjegy = new frmNevjegy();
         public frmMainProgram()
         {
             InitializeComponent();
+        }
+
+       
+
+        private void TsmMenuNevjegy_Click(object sender, EventArgs e)
+        {
+            nevjegy.ShowDialog();
+        }
+
+        private void TsmMenuKIlep_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
