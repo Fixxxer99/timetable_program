@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTable_DB_Source", "Time
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLogin", "UserLogin\UserLogin.csproj", "{0DD47AA9-7BD5-4BF5-917F-D89C56C5A94F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainProgram", "MainProgram\MainProgram.csproj", "{3C1480B5-45A9-4A46-AC9A-752A236F98DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0DD47AA9-7BD5-4BF5-917F-D89C56C5A94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DD47AA9-7BD5-4BF5-917F-D89C56C5A94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DD47AA9-7BD5-4BF5-917F-D89C56C5A94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1480B5-45A9-4A46-AC9A-752A236F98DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1480B5-45A9-4A46-AC9A-752A236F98DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1480B5-45A9-4A46-AC9A-752A236F98DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1480B5-45A9-4A46-AC9A-752A236F98DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

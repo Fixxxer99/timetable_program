@@ -14,3 +14,6 @@ D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.
 D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.csproj.CopyComplete
 D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.exe
 D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\obj\Debug\UserLogin.pdb
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\MainProgram.exe
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\MainProgram.pdb
+D:\Training\timetable_program\TimeTable_DB_Source\UserLogin\bin\Debug\MainProgram.exe.config

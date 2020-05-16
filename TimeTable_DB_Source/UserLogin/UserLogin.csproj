@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MainProgram\MainProgram.csproj">
+      <Project>{3c1480b5-45a9-4a46-ac9a-752a236f98db}</Project>
+      <Name>MainProgram</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TimeTable_DB_Source\TimeTable_DB_Source.csproj">
       <Project>{0446404c-a9b3-4663-a5dc-815b699ab8e5}</Project>
       <Name>TimeTable_DB_Source</Name>

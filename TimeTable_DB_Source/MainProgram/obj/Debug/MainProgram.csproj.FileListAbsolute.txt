@@ -1,0 +1,16 @@
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\bin\Debug\MainProgram.exe.config
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\bin\Debug\MainProgram.exe
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\bin\Debug\MainProgram.pdb
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\bin\Debug\TimeTable_DB_Source.dll
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\bin\Debug\EntityFramework.dll
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\bin\Debug\TimeTable_DB_Source.pdb
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\bin\Debug\TimeTable_DB_Source.dll.config
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\bin\Debug\EntityFramework.xml
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.csprojAssemblyReference.cache
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.frmMainProgram.resources
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.Properties.Resources.resources
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.csproj.GenerateResource.cache
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.csproj.CoreCompileInputs.cache
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.csproj.CopyComplete
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.exe
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.pdb

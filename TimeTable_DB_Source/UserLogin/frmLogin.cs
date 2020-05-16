@@ -8,12 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MainProgram;
+
 
 namespace UserLogin
 {
-    public partial class frmLogin : Form
 
+    
+    public partial class frmLogin : Form
+               
     {
+
+        frmMainProgram main = new frmMainProgram();
         public frmLogin()
         {
             InitializeComponent();
@@ -37,7 +43,7 @@ namespace UserLogin
         {
             Application.Exit();
         }
-
+        
         private void btnEntrance_Click(object sender, EventArgs e)
         {
             SqlConnection sqlconn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\db\Login.mdf;integrated security=True;connect timeout=30;");
@@ -49,7 +55,7 @@ namespace UserLogin
             if (dtbl.Rows.Count == 1)
             {
                 this.Hide();
-
+                main.ShowDialog();
 
 
 
