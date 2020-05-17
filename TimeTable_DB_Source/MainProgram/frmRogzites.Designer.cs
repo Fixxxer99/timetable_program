@@ -1,6 +1,6 @@
 ﻿namespace MainProgram
 {
-    partial class frmFelvitel
+    partial class frmRogzites
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,17 @@
         {
             this.SuspendLayout();
             // 
-            // frmFelvitel
+            // frmRogzites
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmFelvitel";
+            this.MaximizeBox = false;
+            this.Name = "frmRogzites";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Felvitel";
+            this.Text = "Adatok Felvitele";
             this.ResumeLayout(false);
 
         }

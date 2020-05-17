@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Felvitel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Felvitel.Designer.cs">
-      <DependentUpon>Felvitel.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmMainProgram.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,25 +58,22 @@
     <Compile Include="frmNevjegy.Designer.cs">
       <DependentUpon>frmNevjegy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lekerdezes.cs">
+    <Compile Include="frmRogzites.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lekerdezes.Designer.cs">
-      <DependentUpon>Lekerdezes.cs</DependentUpon>
+    <Compile Include="frmRogzites.Designer.cs">
+      <DependentUpon>frmRogzites.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Felvitel.resx">
-      <DependentUpon>Felvitel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMainProgram.resx">
       <DependentUpon>frmMainProgram.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNevjegy.resx">
       <DependentUpon>frmNevjegy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lekerdezes.resx">
-      <DependentUpon>Lekerdezes.cs</DependentUpon>
+    <EmbeddedResource Include="frmRogzites.resx">
+      <DependentUpon>frmRogzites.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

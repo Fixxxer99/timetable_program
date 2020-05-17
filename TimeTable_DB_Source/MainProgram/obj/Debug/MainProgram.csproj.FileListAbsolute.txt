@@ -15,5 +15,4 @@ D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProg
 D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.exe
 D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.pdb
 D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.frmNevjegy.resources
-D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.frmFelvitel.resources
-D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.frmLekerdez.resources
+D:\Training\timetable_program\TimeTable_DB_Source\MainProgram\obj\Debug\MainProgram.frmRogzites.resources

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MainProgram
 {
-    public partial class frmLekerdez : Form
+    public partial class frmRogzites : Form
     {
-        public frmLekerdez()
+        public frmRogzites()
         {
             InitializeComponent();
         }

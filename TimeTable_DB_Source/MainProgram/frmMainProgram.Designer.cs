@@ -56,19 +56,19 @@
             // exportToolStripMenuItem
             // 
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.exportToolStripMenuItem.Text = "Exportálás (Xml)";
             // 
             // importálásXmplToolStripMenuItem
             // 
             this.importálásXmplToolStripMenuItem.Name = "importálásXmplToolStripMenuItem";
-            this.importálásXmplToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.importálásXmplToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.importálásXmplToolStripMenuItem.Text = "Importálás (Xml)";
             // 
             // kilépésToolStripMenuItem
             // 
             this.kilépésToolStripMenuItem.Name = "kilépésToolStripMenuItem";
-            this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.kilépésToolStripMenuItem.Text = "Kilépés";
             this.kilépésToolStripMenuItem.Click += new System.EventHandler(this.kilépésToolStripMenuItem_Click);
             // 
@@ -83,8 +83,8 @@
             // adatokFelviteleMódosításaToolStripMenuItem
             // 
             this.adatokFelviteleMódosításaToolStripMenuItem.Name = "adatokFelviteleMódosításaToolStripMenuItem";
-            this.adatokFelviteleMódosításaToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
-            this.adatokFelviteleMódosításaToolStripMenuItem.Text = "Adatok felvitele/Módosítása";
+            this.adatokFelviteleMódosításaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adatokFelviteleMódosításaToolStripMenuItem.Text = "Adatok felvitele";
             this.adatokFelviteleMódosításaToolStripMenuItem.Click += new System.EventHandler(this.adatokFelviteleMódosításaToolStripMenuItem_Click);
             // 
             // TsmLekerdezes
@@ -99,9 +99,8 @@
             // TsmMenuLekerdez
             // 
             this.TsmMenuLekerdez.Name = "TsmMenuLekerdez";
-            this.TsmMenuLekerdez.Size = new System.Drawing.Size(180, 22);
+            this.TsmMenuLekerdez.Size = new System.Drawing.Size(175, 22);
             this.TsmMenuLekerdez.Text = "Adatok lekérdezése";
-            this.TsmMenuLekerdez.Click += new System.EventHandler(this.TsmMenuLekerdez_Click);
             // 
             // TsmKapcsolat
             // 
