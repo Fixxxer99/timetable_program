@@ -213,6 +213,7 @@
             this.btnFelvitel.TabIndex = 11;
             this.btnFelvitel.Text = "Felvitel";
             this.btnFelvitel.UseVisualStyleBackColor = true;
+            this.btnFelvitel.Click += new System.EventHandler(this.btnFelvitel_Click);
             // 
             // btnVissza
             // 

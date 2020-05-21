@@ -72,6 +72,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tantargy.cs" />
     <EmbeddedResource Include="frmMainProgram.resx">
       <DependentUpon>frmMainProgram.cs</DependentUpon>
     </EmbeddedResource>

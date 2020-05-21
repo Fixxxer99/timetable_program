@@ -18,11 +18,31 @@ namespace MainProgram
             InitializeComponent();
         }
 
+
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;attachdbfilename=D:\Training\timetable_program\TimeTable_DB_Source\TimeTable_DB_Source\db\Login.mdf;integrated security=True;connect timeout=30");
+
 
         private void btnVissza_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnFelvitel_Click(object sender, EventArgs e)
+        {
+            try {
+
+                conn.Open();
+
+                conn.Close();
+
+                
+
+               
+
+            } catch (Exception ex) {
+
+                MessageBox.Show(""+ex);
+            }
         }
     }
 }
