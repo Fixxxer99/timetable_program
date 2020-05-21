@@ -99,8 +99,9 @@
             // TsmMenuLekerdez
             // 
             this.TsmMenuLekerdez.Name = "TsmMenuLekerdez";
-            this.TsmMenuLekerdez.Size = new System.Drawing.Size(175, 22);
+            this.TsmMenuLekerdez.Size = new System.Drawing.Size(180, 22);
             this.TsmMenuLekerdez.Text = "Adatok lekérdezése";
+            this.TsmMenuLekerdez.Click += new System.EventHandler(this.TsmMenuLekerdez_Click);
             // 
             // TsmKapcsolat
             // 

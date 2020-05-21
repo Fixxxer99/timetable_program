@@ -42,5 +42,11 @@ namespace MainProgram
             frmRogzites rogzites = new frmRogzites();
             rogzites.ShowDialog();
         }
+
+        private void TsmMenuLekerdez_Click(object sender, EventArgs e)
+        {
+            frmLekerdezes lekerdezes = new frmLekerdezes();
+            lekerdezes.ShowDialog();
+        }
     }
 }
