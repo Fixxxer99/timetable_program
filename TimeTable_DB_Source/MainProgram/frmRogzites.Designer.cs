@@ -222,6 +222,7 @@
             this.btnVissza.TabIndex = 12;
             this.btnVissza.Text = "Vissza";
             this.btnVissza.UseVisualStyleBackColor = true;
+            this.btnVissza.Click += new System.EventHandler(this.btnVissza_Click);
             // 
             // frmRogzites
             // 
